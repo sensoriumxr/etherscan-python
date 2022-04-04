@@ -191,7 +191,8 @@ class Accounts:
 
     @staticmethod
     def get_erc20_token_transfer_events_by_contract_address_paginated(
-        contract_address: str, page: int, offset: int, sort: str
+        contract_address: str, page: int, offset: int, sort: str,
+        startblock: int, endblock: int,
     ) -> str:
 
         url = (
@@ -207,6 +208,10 @@ class Accounts:
             f"{str(page)}"
             f"{fields.OFFSET}"
             f"{str(offset)}"
+            f"{fields.START_BLOCK}"
+            f"{str(startblock)}"
+            f"{fields.END_BLOCK}"
+            f"{str(endblock)}"
         )
         return url
 

@@ -252,7 +252,9 @@
       "contract_address": "0x8fe80f7ca77daa68b059f8b3e29e1c5d962f01e7",
       "page": 1,
       "offset": 100,
-      "sort": "asc"
+      "sort": "asc",
+      "startblock": 0,
+      "endblock": 999999999
     }
   },
   "get_erc20_token_transfer_events_by_address_and_contract_paginated": {
